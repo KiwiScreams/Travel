@@ -1,0 +1,166 @@
+*
+{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+	font: inherit;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 700;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+}
+body
+{
+	background-color: #F1F1F1;
+    font-family: "Roboto", sans-serif;
+}
+header
+{
+	width: 100%;
+	position: fixed;
+	top: 0;
+    padding: 20px 952px 20px 138px;
+	background-color: #F1F1F1;
+    color: #000;
+    z-index: 2;
+}
+header a
+{
+    color: #000;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+h1
+{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+#first-h1
+{
+    margin-top: 84px;
+}
+.main-container
+{
+    height: 360px;
+    /* background-color: red; */
+    /* margin-bottom: 40px; */
+}
+main
+{
+    padding: 0 140px;
+}
+.info-container
+{
+    width: 362px;
+}
+.info-container .img-container 
+{
+    width: 362px;
+    height: 190px;
+    position: relative;
+}
+.img-container img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.text-container
+{
+    /* background-color: red; */
+    background-color: #fff;
+    padding: 68px 86px 40px 36px;
+    line-height: 2.2;
+}
+.text-container > p
+{
+    font-size: 10px;
+    /* line-height: 12px; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    /* height: 36px; */
+    width: 238px;
+    color: #8A8787;
+}
+.time-div
+{
+    width: 70px;
+}
+.time-div > p
+{
+    font-size: 10px;
+    margin-left: 10px;
+    float: right;
+    color: #8A8787;
+    /* background-color: red; */
+}
+.time-div img
+{
+    width: 16px;
+    height: 16px;
+}
+.h2-text
+{
+    position: absolute;
+    top: 32px;
+    left: 42px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.libero-div
+{
+    position: relative;
+}
+.libero-div img
+{
+    margin-bottom: 42px;
+}
+.libero-h2
+{
+    position: absolute;
+    top: 204px;
+    right: 278px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    /* bottom: 204px; */
+}
+.small-container img
+{
+    margin-bottom: 98px;
+}
+footer 
+{
+    margin-top: 36px;
+	width: 100%;
+	height: 200px;
+    padding: 60px 138px 44px 136px;
+	background-color: #243043;
+}
+footer > .footer-content 
+{
+	width: 1166px;
+	margin: 0 auto;
+}
+footer p
+{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+}
+footer ul li a
+{
+    color: #818687;
+    font-size: 12px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
