@@ -1,0 +1,199 @@
+//IMPORTS
+@import "_reset";
+@import "_variable.scss";
+@import "_mixins";
+
+body
+{
+    background-color: $white-transparent-clr;
+    font-family: "Roboto", sans-serif;
+}
+header
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 20px 952px 20px 138px;
+    background-color: $white-transparent-clr;
+    color: $black-clr;
+    z-index: 2;
+
+    ul
+    {
+        @include flex();
+
+        a
+        {
+            color: $black-clr;
+            font-weight: 700;
+            font-family: "Roboto", sans-serif;
+            &:hover
+            {
+                color: $white-clr;
+            }
+        }
+    }
+}
+h1
+{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: $font-size-24px;
+}
+#first-h1
+{
+    margin-top: 84px;
+}
+main
+{
+    padding: 0 140px;
+    .main-container
+    {
+        height: 360px;
+        @include flex();
+        .info-container
+        {
+            width: 362px;
+            .img-container
+            {
+                width: 362px;
+                height: 190px;
+                position: relative;
+                overflow: hidden;
+                .h2-text
+                {
+                    position: absolute;
+                    top: 32px;
+                    left: 42px;
+                    color: $white-clr;
+                    font-size: $font-size-20px;
+                    font-weight: 700;
+                }
+
+                img
+                {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px 5px 0 0;
+                    transition: 0.5s;
+                    &:hover
+                    {
+                        transform: scale(1.5);
+                        transition: 0.5s;
+                    }
+                }
+            }
+            .text-container
+            {
+                background-color: var($white-clr);
+                padding: 68px 86px 40px 36px;
+                line-height: 2.2;
+
+                p
+                {
+                    font-size: $font-size-10px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 700;
+                    width: 238px;
+                    color: $gray-clr;
+                }
+                .time-div
+                {
+                    width: 70px;
+                    @include flex();
+
+                    p
+                    {
+                        font-size: $font-size-10px;
+                        margin-left: 10px;
+                        float: right;
+                        color: $gray-clr;
+                    }
+                    img
+                    {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+.big-container
+{
+    @include flex();
+    .libero-div
+    {
+        position: relative;
+        .libero-h2
+        {
+            position: absolute;
+            top: 204px;
+            right: 278px;
+            font-weight: 700;
+            font-size: $font-size-20px;
+            color: $white-clr;
+        }
+        img
+        {
+            margin-bottom: 42px;
+        }
+    }
+}
+.small-container
+{
+    img
+    {
+        margin-bottom: 98px;
+    }
+}
+footer
+{
+    margin-top: 36px;
+    width: 100%;
+    height: 200px;
+    padding: 60px 138px 44px 136px;
+    background-color: $darkBlue-clr;
+
+    .footer-content
+    {
+        width: 1166px;
+        margin: 0 auto;
+        @include flex();
+
+        ul
+        {
+            li
+            {
+                a
+                {
+                    color: $lightGray-clr;
+                    font-size: $font-size-12px;
+                    &:hover
+                    {
+                        color: $white-clr;
+                    }
+                }
+            }
+        }
+    }
+    p
+    {
+        font-size: $font-size-12px;
+        color: $white-clr;
+        font-weight: 400;
+    }
+        .logo
+        {
+            &:hover
+            {
+                opacity: 0.5;
+            }
+        }
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
